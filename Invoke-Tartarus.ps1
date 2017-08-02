@@ -6,9 +6,9 @@ function Invoke-Tartarus
 
 .DISCLAIMER
 
-Warning! Use at your own risk! This script is an example of actual threat and was created to help responder to understant them.
+Warning! Use at your own risk! This script is an example of actual threat and was created to help responder to understand them.
 
-Any actions and or activities related to the material contained within this blog is solely your responsibility.The misuse of the information in this website can result in criminal charges brought against the persons in question. The authors will not be held responsible in the event any criminal charges be brought against any individuals misusing the information in this website to break the law.
+Any action and/or activities related to the material contained within this blog is solely your responsibility. The misuse of the information in this website can result in criminal charges brought against the persons in question. The authors will not be held responsible in the event any criminal charges be brought against any individuals misusing the information in this website to break the law.
 
 This script is published for educational use only. I am no way responsible for any misuse of the information.
 
